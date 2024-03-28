@@ -8,7 +8,7 @@ first detected USB/SD card
 
 1. Clone the repo
 ```sh
-git clone 
+git clone https://github.com/nolanwinsman/gc_swiss_updater.git
 ```
 
 ## Getting Started
