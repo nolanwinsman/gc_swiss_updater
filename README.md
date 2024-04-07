@@ -1,8 +1,7 @@
-### Gamecube Swiss Updater
+# Gamecube Swiss Updater
 
-Simple Python script to download the newest release of Swiss [https://github.com/emukidid/swiss-gc](https://github.com/emukidid/swiss-gc), extract the file and copy the contents to the 
-first detected USB/SD card
-
+Simple Python script to download the newest release of Swiss [https://github.com/emukidid/swiss-gc](https://github.com/emukidid/swiss-gc), extract the `DOL` file, renames it to `IPL.dol` and copies it to the
+first detected mounted FAT32 USB/SD card
 
 ## Requirements
 
@@ -18,19 +17,25 @@ first detected USB/SD card
 git clone https://github.com/nolanwinsman/gc_swiss_updater.git
 ```
 
+2. Install Python pip packages.
+```sh
+pip install -r requirements.txt
+```
+
 ## Getting Started
 
+- Have whatever drive you want to store your Swiss homebrew on. It should be a FAT32 external drive.
+- Do not have **ANY** other drives mounted on your computer.
+- Run `python main.py`
+- Script will run downloading the newest Swiss `DOL` file and renaming/copying it to your Swiss drive.
 
-
-## Features
-
-# Contact
+## Contact
 
 Nolan Winsman - [@Github](https://github.com/nolanwinsman) - nolanwinsman@gmail.com
 
-Project Link: [https://github.com/nolanwinsman/bulk_renamer](https://github.com/nolanwinsman/bulk_renamer)
+Project Link: [https://github.com/nolanwinsman/gc_swiss_updater](https://github.com/nolanwinsman/gc_swiss_updater)
 
-# Contributers
+## Contributers
 - nolanwinsman
 
 ## Files
@@ -43,5 +48,9 @@ Project Link: [https://github.com/nolanwinsman/bulk_renamer](https://github.com/
 - requirements.txt
 - .gitignore : includes `swiss-releases/` and `__pycache__/`
 
+## Credits
 
+This project is inspired by and utilizes the Swiss Homebrew Software developed by emukidid.
+
+Repo Link: [https://github.com/emukidid/swiss-gc](https://github.com/emukidid/swiss-gc)
 
