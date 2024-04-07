@@ -1,0 +1,25 @@
+commit 5b8fb69c49a8645d9707e83d2f1e14a043d0aaa3
+Author: Extrems <metaradil@gmail.com>
+Date:   Sat Mar 9 22:00:00 2024 -0500
+
+    - Avoid needlessly masking PI debug interrupt.
+
+commit e8911d3ba1895a9efc6d4d66a736eedfcc2aa703
+Author: Extrems <metaradil@gmail.com>
+Date:   Mon Mar 4 20:53:23 2024 -0500
+
+    - Only enable for GC Loader if eligible as patch device.
+    - Forcibly use GC Loader as patch device if enabled features demand it.
+
+commit 600fa45d55cb06896bdc53ccc484eb50b98e4bc2
+Author: Extrems <metaradil@gmail.com>
+Date:   Sun Mar 3 23:20:49 2024 -0500
+
+    - Avoid unnecessary end read.
+
+commit 5efa3276793c3392cc4419338ff2b533f0043cf1
+Author: Extrems <metaradil@gmail.com>
+Date:   Sun Mar 3 20:47:47 2024 -0500
+
+    - Add ETH2GC logo.
+    - Update tooltip.

@@ -44,7 +44,7 @@ if usb_drive_info:
     # Moves the rest of the release folder to the Gamecube Swiss Drive
     swiss_release_folder =  os.path.join(f"{target_dir}/{extracted_swiss_folder}")
     print(f"Moving {swiss_release_folder} to {usb_drive_info.mountpoint}")
-    shutil.move(swiss_release_folder, usb_drive_info.mountpoint, copy_function=shutil.copy2)
+    Util.copy_files(swiss_release_folder, usb_drive_info.mountpoint)
 
     print(f"Swiss Version upgraded to {extracted_swiss_folder}")
 

@@ -1,6 +1,7 @@
 # file_extractor.py
 
 import os
+import shutil
 from py7zr import SevenZipFile
 
 class Util:
@@ -20,3 +21,19 @@ class Util:
             archive.extractall(target_dir)
             # Assuming only one file is extracted, return its name
             return file_list[0] if file_list else None
+
+    @staticmethod
+    def copy_files(src, dst):
+        """
+        Copies files from source to destination, creating destination directory if needed.
+        """
+        os.makedirs(dst, exist_ok=True)  # Create destination directory if it doesn't exist
+        for item in os.listdir(src):
+            src_path = os.path.join(src, item)
+            dst_path = os.path.join(dst, item)
+            if os.path.isdir(src_path):
+                # Recursively copy subdirectories
+                Util.copy_files(src_path, dst_path)  # Use Util.copy_files() recursively
+            else:
+                # Copy files, overwrite existing files
+                shutil.copy2(src_path, dst_path)
