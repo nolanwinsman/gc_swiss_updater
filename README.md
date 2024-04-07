@@ -4,6 +4,13 @@ Simple Python script to download the newest release of Swiss [https://github.com
 first detected USB/SD card
 
 
+## Requirements
+
+- Python 3.x installed
+- Internet connection
+- GameCube with Swiss homebrew software
+- USB or microSD card (the only external drive plugged in)
+
 ## Installation
 
 1. Clone the repo
@@ -12,6 +19,8 @@ git clone https://github.com/nolanwinsman/gc_swiss_updater.git
 ```
 
 ## Getting Started
+
+
 
 ## Features
 
